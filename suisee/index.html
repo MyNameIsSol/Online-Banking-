@@ -1,0 +1,2464 @@
+<link rel='stylesheet' id='ep-advanced-icon-box-css' media='all'>
+<!doctype html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile">
+
+	<title>click state</title>
+	<meta name='robots' content='noindex, nofollow'>
+	<link rel="alternate" type="application/rss+xml" title="click state &raquo; Feed"
+		href="#">
+	<link rel="alternate" type="application/rss+xml" title="click state &raquo; Comments Feed"
+		href="#">
+<script src="//code.tidio.co/3jt1adiakombahrnqevuxuutn8a8jppa.js" async></script>
+<!-- <script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/nationtruist.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>-->
+	<style>
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 0.07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+	</style>
+	<link rel='stylesheet' id='bdt-uikit-css'
+		href='wp-content/plugins/bdthemes-element-pack/assets/css/bdt-uikit.css?ver=3.7.2' media='all'>
+	<link rel='stylesheet' id='element-pack-site-css'
+		href='wp-content/plugins/bdthemes-element-pack/assets/css/element-pack-site.css?ver=5.15.2' media='all'>
+	<link rel='stylesheet' id='wp-block-library-css' href='wp-includes/css/dist/block-library/style.min.css?ver=6.1.1'
+		media='all'>
+	<link rel='stylesheet' id='classic-theme-styles-css' href='wp-includes/css/classic-themes.min.css?ver=1'
+		media='all'>
+	<style id='global-styles-inline-css'>
+		body {
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #ffffff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+			--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
+			--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
+			--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
+			--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
+			--wp--preset--duotone--midnight: url('#wp-duotone-midnight');
+			--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
+			--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
+			--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
+			--wp--preset--font-size--small: 13px;
+			--wp--preset--font-size--medium: 20px;
+			--wp--preset--font-size--large: 36px;
+			--wp--preset--font-size--x-large: 42px;
+			--wp--preset--spacing--20: 0.44rem;
+			--wp--preset--spacing--30: 0.67rem;
+			--wp--preset--spacing--40: 1rem;
+			--wp--preset--spacing--50: 1.5rem;
+			--wp--preset--spacing--60: 2.25rem;
+			--wp--preset--spacing--70: 3.38rem;
+			--wp--preset--spacing--80: 5.06rem;
+		}
+
+		:where(.is-layout-flex) {
+			gap: 0.5em;
+		}
+
+		body .is-layout-flow>.alignleft {
+			float: left;
+			margin-inline-start: 0;
+			margin-inline-end: 2em;
+		}
+
+		body .is-layout-flow>.alignright {
+			float: right;
+			margin-inline-start: 2em;
+			margin-inline-end: 0;
+		}
+
+		body .is-layout-flow>.aligncenter {
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		body .is-layout-constrained>.alignleft {
+			float: left;
+			margin-inline-start: 0;
+			margin-inline-end: 2em;
+		}
+
+		body .is-layout-constrained>.alignright {
+			float: right;
+			margin-inline-start: 2em;
+			margin-inline-end: 0;
+		}
+
+		body .is-layout-constrained>.aligncenter {
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		body .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+			max-width: var(--wp--style--global--content-size);
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+
+		body .is-layout-constrained>.alignwide {
+			max-width: var(--wp--style--global--wide-size);
+		}
+
+		body .is-layout-flex {
+			display: flex;
+		}
+
+		body .is-layout-flex {
+			flex-wrap: wrap;
+			align-items: center;
+		}
+
+		body .is-layout-flex>* {
+			margin: 0;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		.has-black-color {
+			color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-color {
+			color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-color {
+			color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-color {
+			color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-color {
+			color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-color {
+			color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-color {
+			color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-color {
+			color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-color {
+			color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-color {
+			color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-color {
+			color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-color {
+			color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-background-color {
+			background-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-background-color {
+			background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-background-color {
+			background-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-background-color {
+			background-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-background-color {
+			background-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-background-color {
+			background-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-background-color {
+			background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-background-color {
+			background-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-black-border-color {
+			border-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-border-color {
+			border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-border-color {
+			border-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-border-color {
+			border-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-border-color {
+			border-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-border-color {
+			border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-border-color {
+			border-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-border-color {
+			border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-border-color {
+			border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-border-color {
+			border-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+			background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+		}
+
+		.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+			background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+		}
+
+		.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+		}
+
+		.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+			background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+		}
+
+		.has-cool-to-warm-spectrum-gradient-background {
+			background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+		}
+
+		.has-blush-light-purple-gradient-background {
+			background: var(--wp--preset--gradient--blush-light-purple) !important;
+		}
+
+		.has-blush-bordeaux-gradient-background {
+			background: var(--wp--preset--gradient--blush-bordeaux) !important;
+		}
+
+		.has-luminous-dusk-gradient-background {
+			background: var(--wp--preset--gradient--luminous-dusk) !important;
+		}
+
+		.has-pale-ocean-gradient-background {
+			background: var(--wp--preset--gradient--pale-ocean) !important;
+		}
+
+		.has-electric-grass-gradient-background {
+			background: var(--wp--preset--gradient--electric-grass) !important;
+		}
+
+		.has-midnight-gradient-background {
+			background: var(--wp--preset--gradient--midnight) !important;
+		}
+
+		.has-small-font-size {
+			font-size: var(--wp--preset--font-size--small) !important;
+		}
+
+		.has-medium-font-size {
+			font-size: var(--wp--preset--font-size--medium) !important;
+		}
+
+		.has-large-font-size {
+			font-size: var(--wp--preset--font-size--large) !important;
+		}
+
+		.has-x-large-font-size {
+			font-size: var(--wp--preset--font-size--x-large) !important;
+		}
+
+		.wp-block-navigation a:where(:not(.wp-element-button)) {
+			color: inherit;
+		}
+
+		:where(.wp-block-columns.is-layout-flex) {
+			gap: 2em;
+		}
+
+		.wp-block-pullquote {
+			font-size: 1.5em;
+			line-height: 1.6;
+		}
+	</style>
+	<link rel='stylesheet' id='elementor-icons-css'
+		href='wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.16.0' media='all'>
+	<link rel='stylesheet' id='elementor-frontend-css'
+		href='wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.9.1' media='all'>
+	<link rel='stylesheet' id='elementor-post-7-css' href='wp-content/uploads/elementor/css/post-7.css?ver=1671099184'
+		media='all'>
+	<link rel='stylesheet' id='uicore_global-css' href='wp-content/uploads/uicore-global.css?ver=2116' media='all'>
+	<link rel='stylesheet' id='google-fonts-1-css'
+		href='css.css?family=Inter%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CDM+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.1.1'
+		media='all'>
+	<link rel='stylesheet' id='elementor-icons-shared-0-css'
+		href='wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' media='all'>
+	<link rel='stylesheet' id='elementor-icons-fa-solid-css'
+		href='wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' media='all'>
+	<link rel='stylesheet' id='elementor-icons-shared-1-css'
+		href='wp-content/plugins/uicore-framework/assets/fonts/themify-icons.css?ver=1.0.0' media='all'>
+	<link rel='stylesheet' id='elementor-icons-uicore-icons-css'
+		href='wp-content/plugins/uicore-framework/assets/fonts/themify-icons.css?ver=1.0.0' media='all'>
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+	<script src='wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
+	<script src='wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+	<link rel="https://api.w.org/" href="wp-json/index.html">
+	<link rel="alternate" type="application/json" href="wp-json/wp/v2/pages/7">
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://clickstateonline.com/xmlrpc.php?rsd">
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml">
+	<meta name="generator" content="WordPress 6.1.1">
+	<link rel="canonical" href="index.html">
+	<link rel='shortlink' href='index.html'>
+	<link rel="alternate" type="application/json+oembed"
+		href="wp-json/oembed/1.0/embed?url=https%3A%2F%2Fnationtruist.com%2F">
+	<link rel="alternate" type="text/xml+oembed"
+		href="wp-json/oembed/1.0/embed-1?url=https%3A%2F%2Fnationtruist.com%2F&#038;format=xml">
+	<meta name="theme-color" content="#FFFFFF">
+	<link rel="shortcut icon" href="images/clickstate_icon.png">
+	<link rel="icon" href="images/clickstate_icon.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/clickstate_icon.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/clickstate_icon.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/clickstate_icon.png">
+	<link rel="apple-touch-icon" href="images/clickstate_icon.png">
+
+</head>
+
+<body
+	class="home page-template-default page page-id-7 wp-embed-responsive  uicore-menu-focus elementor-default elementor-kit-6 elementor-page elementor-page-7">
+	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-dark-grayscale">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 ">
+				</fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr>
+					<fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg>
+					<fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-grayscale">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 ">
+				</fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0 1"></fefuncr>
+					<fefuncg type="table" tablevalues="0 1"></fefuncg>
+					<fefuncb type="table" tablevalues="0 1"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-purple-yellow">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 ">
+				</fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr>
+					<fefuncg type="table" tablevalues="0 1"></fefuncg>
+					<fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-blue-red">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 ">
+				</fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0 1"></fefuncr>
+					<fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg>
+					<fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-midnight">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 ">
+				</fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0 0"></fefuncr>
+					<fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg>
+					<fefuncb type="table" tablevalues="0 1"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-magenta-yellow">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 ">
+				</fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr>
+					<fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg>
+					<fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-purple-green">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 ">
+				</fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr>
+					<fefuncg type="table" tablevalues="0 1"></fefuncg>
+					<fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none"
+		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-blue-orange">
+				<fecolormatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 ">
+				</fecolormatrix>
+				<fecomponenttransfer color-interpolation-filters="sRGB">
+					<fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr>
+					<fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg>
+					<fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb>
+					<fefunca type="table" tablevalues="1 1"></fefunca>
+				</fecomponenttransfer>
+				<fecomposite in2="SourceGraphic" operator="in"></fecomposite>
+			</filter>
+		</defs>
+	</svg><!-- 1.1 uicore_before_body_content -->
+	<div class="uicore-body-content">
+		<!-- 1.2 uicore_before_page_content -->
+		<div id="uicore-page">
+
+			<div id="wrapper-navbar" itemscope="" itemtype="http://schema.org/WebSite"
+				class="uicore uicore-navbar elementor-section uicore-h-classic uicore-sticky ui-smart-sticky ">
+				<div class="uicore-header-wrapper">
+					<nav class="uicore elementor-container">
+						<div class="uicore-branding">
+
+							<a href="index.html" rel="home">
+								<img class="uicore uicore-logo uicore-main" src="images/clickstate_logo.png"
+									alt="click state" style="width:140px; top: -30px; margin-right:20px; height:90px;">
+								<img class="uicore uicore-logo uicore-second" src="images/clickstate_logo.png"
+									alt="click state" style="width:140px; top: -30px; margin-right: 20px; height:90px;">
+								<img class="uicore uicore-logo uicore-mobile-main"
+									src="images/clickstate_logo.png" alt="click state" style="width:90px; top: -20px; margin-right: 20px; height:60px;">
+								<img class="uicore uicore-logo uicore-mobile-second"
+									src="images/clickstate_logo.png" alt="click state" style="width:100px; top: -90px; height:100px;">
+							</a>
+
+						</div>
+						<br>
+						<br>
+						<div class='uicore-nav-menu' style="margin-top: 30px;">
+							<div class="uicore-menu-container uicore-nav">
+								<ul class="uicore-menu">
+									<li
+										class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-166">
+										<a href="index.html" aria-current="page"><span
+												class="ui-menu-item-wrapper">Home</span></a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170">
+										<a href="services.html"><span class="ui-menu-item-wrapper">Services</span></a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-167">
+										<a href="about-us.html"><span class="ui-menu-item-wrapper">About Us</span></a>
+									</li>
+									<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-169"> -->
+										<!-- <a href="faqs.html"><span class="ui-menu-item-wrapper">FAQs</span></a></li> -->
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-168">
+										<a href="contact-us.html"><span class="ui-menu-item-wrapper">Contact
+												Us</span></a></li>
+								</ul>
+							</div>
+							<div class="uicore uicore-extra">
+								<div class="uicore-cta-wrapper">
+									<a href="login.php" target="_self" class="uicore-btn uicore-inverted">
+										Secure Login </a>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="uicore-toggle uicore-ham">
+							<span class="bars">
+								<span class="bar"></span>
+								<span class="bar"></span>
+								<span class="bar"></span>
+							</span>
+						</button>
+					</nav>
+
+				</div>
+			</div><!-- #wrapper-navbar end -->
+			<!-- 1.3 uicore_page -->
+			<!-- <header>
+				<video autoplay loop muted>
+					<source src="vid.mp4" type="video/mp4">
+				</video>
+			</header> -->
+			<style type="text/css">
+				header{
+					height: 90vh;
+					/*background-color: black;*/
+					position: relative;
+				}
+
+				video{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					bottom: 0px;
+
+				}
+			</style>
+			<div id="content" class="uicore-content" style="margin-top:-1px;">
+
+				<!-- 1.4 uicore_before_content -->
+				<div id="primary" class="content-area">
+
+					<article id="post-7" class="post-7 page type-page status-publish hentry">
+						<div class="entry-content">
+							<div data-elementor-type="wp-page" data-elementor-id="7" class="elementor elementor-7">
+								<div class="elementor-section elementor-top-section elementor-element elementor-element-6edffb3 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="6edffb3" data-element_type="section"
+									data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:193,&quot;url&quot;:&quot;https:\/\/nationtruist.com\/wp-content\/uploads\/2022\/12\/6110c9ec14e281628490220.jpg&quot;},{&quot;id&quot;:84,&quot;url&quot;:&quot;https:\/\/nationtruist.com\/wp-content\/uploads\/2022\/12\/slide-v1-2.jpg&quot;},{&quot;id&quot;:85,&quot;url&quot;:&quot;https:\/\/nationtruist.com\/wp-content\/uploads\/2022\/12\/slide-v1-3.jpg&quot;}],&quot;background_slideshow_transition_duration&quot;:1000,&quot;background_slideshow_ken_burns&quot;:&quot;yes&quot;,&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_ken_burns_zoom_direction&quot;:&quot;in&quot;}">
+									<div class="elementor-background-overlay"></div>
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-675a5be elementor-invisible"
+											data-id="675a5be" data-element_type="column"
+											data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-b9256d6 elementor-widget elementor-widget-heading"
+													data-id="b9256d6" data-element_type="widget"
+													data-widget_type="heading.default">
+													<div class="elementor-widget-container">
+														<style>
+															/*! elementor - v3.9.1 - 14-12-2022 */
+															.elementor-heading-title {
+																padding: 0;
+																margin: 0;
+																line-height: 1
+															}
+
+															.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
+																color: inherit;
+																font-size: inherit;
+																line-height: inherit
+															}
+
+															.elementor-widget-heading .elementor-heading-title.elementor-size-small {
+																font-size: 15px
+															}
+
+															.elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+																font-size: 19px
+															}
+
+															.elementor-widget-heading .elementor-heading-title.elementor-size-large {
+																font-size: 29px
+															}
+
+															.elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+																font-size: 39px
+															}
+
+															.elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+																font-size: 59px
+															}
+														</style>
+														<h1 class="elementor-heading-title elementor-size-default">
+															Revolutionizing Banking Since its Discovery Year</h1>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-894ba0a elementor-widget elementor-widget-text-editor"
+													data-id="894ba0a" data-element_type="widget"
+													data-widget_type="text-editor.default">
+													<div class="elementor-widget-container">
+														<style>
+															/*! elementor - v3.9.1 - 14-12-2022 */
+															.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
+																background-color: #818a91;
+																color: #fff
+															}
+
+															.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
+																color: #818a91;
+																border: 3px solid;
+																background-color: transparent
+															}
+
+															.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
+																margin-top: 8px
+															}
+
+															.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
+																width: 1em;
+																height: 1em
+															}
+
+															.elementor-widget-text-editor .elementor-drop-cap {
+																float: left;
+																text-align: center;
+																line-height: 1;
+																font-size: 50px
+															}
+
+															.elementor-widget-text-editor .elementor-drop-cap-letter {
+																display: inline-block
+															}
+														</style>
+
+														<div class="elementor-element elementor-element-181e565 elementor-widget elementor-widget-spacer"
+															data-id="181e565" data-element_type="widget"
+															data-widget_type="spacer.default">
+															<div class="elementor-widget-container">
+																<div class="elementor-spacer">
+																	<div class="elementor-spacer-inner">
+																		<div class="elementor-widget-container">
+																			<p>click state provides tailor made services
+																				to cater for the needs of the diverse
+																				segments of the economy alongside,
+																				customers who constitute the value chain
+																				of the bank’s commercial, corporate
+																				&amp; investment banking divisions.</p>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-bb85a71 elementor-widget__width-auto elementor-widget elementor-widget-button"
+													data-id="bb85a71" data-element_type="widget"
+													data-widget_type="button.default">
+													<div class="elementor-widget-container">
+														<div class="elementor-button-wrapper">
+															<a href="login.php"
+																class="elementor-button-link elementor-button elementor-size-sm"
+																role="button">
+																<span class="elementor-button-content-wrapper">
+																	<span
+																		class="elementor-button-icon elementor-align-icon-right">
+																		<i aria-hidden="true"
+																			class="fas fa-arrow-right"></i> </span>
+																	<span class="elementor-button-text">Get Started
+																		Now</span>
+																</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<section
+									class="elementor-section elementor-top-section elementor-element elementor-element-86a3c01 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="86a3c01" data-element_type="section">
+									<div class="elementor-background-overlay"></div>
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-0890e8a"
+											data-id="0890e8a" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-54911c9 ui-e-a-animate elementor-widget elementor-widget-highlighted-text"
+													data-id="54911c9" data-element_type="widget"
+													data-widget_type="highlighted-text.default">
+													<div class="elementor-widget-container">
+														<h2 class="ui-e--highlighted-text">
+															<span class="ui-e-headline-text ui-e-headline-stroke7"><span
+																	class="ui-e-headline-text ui-e-headline-highlighted">Simplify</span><span
+																	class="uicore-svg-wrapper"><svg
+																		xmlns="http://www.w3.org/2000/svg"
+																		viewbox="0 0 500 150"
+																		preserveaspectratio="none">
+																		<path d='M15.2 133.3H485'></path>
+																	</svg></span></span> <span
+																class="ui-e-headline-text"> all your business financial
+																transactions</span>
+														</h2>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-0f1bcde elementor-widget elementor-widget-text-editor"
+													data-id="0f1bcde" data-element_type="widget"
+													data-widget_type="text-editor.default">
+													<div class="elementor-widget-container">
+														<p>We have a wide range of accounts to fit everyone, regardless
+															of situation or lifestyle. So whether you want a basic
+															account or one bursting with options, you will find the
+															right account that meets your expectations.</p>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-47eb842 elementor-tablet-align-center elementor-widget elementor-widget-button"
+													data-id="47eb842" data-element_type="widget"
+													data-widget_type="button.default">
+													<div class="elementor-widget-container">
+														<div class="elementor-button-wrapper">
+															<a href="login.php"
+																class="elementor-button-link elementor-button elementor-size-sm"
+																role="button">
+																<span class="elementor-button-content-wrapper">
+																	<span class="elementor-button-text">Get
+																		Started</span>
+																</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-e871ea3 elementor-invisible"
+											data-id="e871ea3" data-element_type="column"
+											data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-0fa8c57 elementor-widget elementor-widget-image"
+													data-id="0fa8c57" data-element_type="widget"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<style>
+															/*! elementor - v3.9.1 - 14-12-2022 */
+															.elementor-widget-image {
+																text-align: center
+															}
+
+															.elementor-widget-image a {
+																display: inline-block
+															}
+
+															.elementor-widget-image a img[src$=".svg"] {
+																width: 48px
+															}
+
+															.elementor-widget-image img {
+																vertical-align: middle;
+																display: inline-block
+															}
+														</style> <img decoding="async" width="562" height="411"
+															src="wp-content/uploads/2022/12/Payment-Solutions-Hero-Image-1.webp"
+															class="attachment-full size-full wp-image-90" alt=""
+															loading="lazy"
+															srcset="wp-content/uploads/2022/12/Payment-Solutions-Hero-Image-1.webp 562w, wp-content/uploads/2022/12/Payment-Solutions-Hero-Image-1-300x219.webp 300w"
+															sizes="(max-width: 562px) 100vw, 562px">
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-24508b8 elementor-widget__width-auto elementor-absolute ui-float-widget  ui-float-s elementor-widget elementor-widget-image"
+													data-id="24508b8" data-element_type="widget"
+													data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async" width="562" height="410"
+															src="wp-content/uploads/2022/12/Payment-Solutions-Hero-Image-2.webp"
+															class="attachment-full size-full wp-image-91" alt=""
+															loading="lazy"
+															srcset="wp-content/uploads/2022/12/Payment-Solutions-Hero-Image-2.webp 562w, wp-content/uploads/2022/12/Payment-Solutions-Hero-Image-2-300x219.webp 300w"
+															sizes="(max-width: 562px) 100vw, 562px">
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-aec65bb elementor-widget__width-auto elementor-absolute ui-float-widget  ui-float-s elementor-widget elementor-widget-image"
+													data-id="aec65bb" data-element_type="widget"
+													data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async" width="562" height="197"
+															src="wp-content/uploads/2022/12/Payment-Solutions-Hero-Image-3.webp"
+															class="attachment-full size-full wp-image-92" alt=""
+															loading="lazy"
+															srcset="wp-content/uploads/2022/12/Payment-Solutions-Hero-Image-3.webp 562w, wp-content/uploads/2022/12/Payment-Solutions-Hero-Image-3-300x105.webp 300w"
+															sizes="(max-width: 562px) 100vw, 562px">
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-563398f elementor-widget__width-auto elementor-absolute elementor-hidden-mobile elementor-widget elementor-widget-image"
+													data-id="563398f" data-element_type="widget"
+													data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async"
+															src="wp-content/uploads/2022/05/Email-Marketing-Accurate-Element-3.webp"
+															title="" alt="">
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-b1e9029 elementor-widget__width-auto elementor-absolute elementor-hidden-mobile elementor-widget elementor-widget-image"
+													data-id="b1e9029" data-element_type="widget"
+													data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async"
+															src="wp-content/uploads/2022/05/Email-Marketing-Accurate-Element-4.webp"
+															title="" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+								<section
+									class="elementor-section elementor-top-section elementor-element elementor-element-98cf710 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="98cf710" data-element_type="section"
+									data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-38a3dba"
+											data-id="38a3dba" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-17a1b36 elementor-widget elementor-widget-heading"
+													data-id="17a1b36" data-element_type="widget"
+													data-widget_type="heading.default">
+													<div class="elementor-widget-container">
+														<h2 class="elementor-heading-title elementor-size-default">We
+															provide the best service for you</h2>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-8cf9974 elementor-widget elementor-widget-text-editor"
+													data-id="8cf9974" data-element_type="widget"
+													data-widget_type="text-editor.default">
+													<div class="elementor-widget-container">
+														<p>click state LLC. is designed to provide easy and convenient
+															access to your funds, because you have worked hard all
+															month.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+								<section
+									class="elementor-section elementor-top-section elementor-element elementor-element-1769a3b elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="1769a3b" data-element_type="section"
+									data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<div class="elementor-container elementor-column-gap-wider">
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-e80c0dd"
+											data-id="e80c0dd" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-65e7e73 elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-invisible elementor-widget elementor-widget-icon-box"
+													data-id="65e7e73" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+													data-widget_type="icon-box.default">
+													<div class="elementor-widget-container">
+														<link rel="stylesheet"
+															href="wp-content/plugins/elementor/assets/css/widget-icon-box.min.css">
+														<div class="elementor-icon-box-wrapper">
+															<div class="elementor-icon-box-icon">
+																<span class="elementor-icon elementor-animation-">
+																	<i aria-hidden="true" class="ti ti-shine"></i>
+																</span>
+															</div>
+															<div class="elementor-icon-box-content">
+																<h4 class="elementor-icon-box-title">
+																	<span>
+																		Super easy to use </span>
+																</h4>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-3b35836"
+											data-id="3b35836" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-c268ed3 elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-invisible elementor-widget elementor-widget-icon-box"
+													data-id="c268ed3" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:100}"
+													data-widget_type="icon-box.default">
+													<div class="elementor-widget-container">
+														<div class="elementor-icon-box-wrapper">
+															<div class="elementor-icon-box-icon">
+																<span class="elementor-icon elementor-animation-">
+																	<i aria-hidden="true"
+																		class="fas fa-money-bill-wave-alt"></i> </span>
+															</div>
+															<div class="elementor-icon-box-content">
+																<h4 class="elementor-icon-box-title">
+																	<span>
+																		Send and recieve money efficiently </span>
+																</h4>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-a25174b"
+											data-id="a25174b" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-ae1d299 elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-invisible elementor-widget elementor-widget-icon-box"
+													data-id="ae1d299" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:100}"
+													data-widget_type="icon-box.default">
+													<div class="elementor-widget-container">
+														<div class="elementor-icon-box-wrapper">
+															<div class="elementor-icon-box-icon">
+																<span class="elementor-icon elementor-animation-">
+																	<i aria-hidden="true" class="fas fa-lock-open"></i>
+																</span>
+															</div>
+															<div class="elementor-icon-box-content">
+																<h4 class="elementor-icon-box-title">
+																	<span>
+																		Safe and protected </span>
+																</h4>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-d4c491b"
+											data-id="d4c491b" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-163b00d elementor-view-default elementor-mobile-position-top elementor-vertical-align-top elementor-invisible elementor-widget elementor-widget-icon-box"
+													data-id="163b00d" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:100}"
+													data-widget_type="icon-box.default">
+													<div class="elementor-widget-container">
+														<div class="elementor-icon-box-wrapper">
+															<div class="elementor-icon-box-icon">
+																<span class="elementor-icon elementor-animation-">
+																	<i aria-hidden="true" class="fas fa-wallet"></i>
+																</span>
+															</div>
+															<div class="elementor-icon-box-content">
+																<h4 class="elementor-icon-box-title">
+																	<span>
+																		Morev efficient transaction fees </span>
+																</h4>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+								<div class="elementor-section elementor-top-section elementor-element elementor-element-edf08e1 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="edf08e1" data-element_type="section"
+									data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-574a82b"
+											data-id="574a82b" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-ddef88e elementor-widget elementor-widget-image"
+													data-id="ddef88e" data-element_type="widget"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async"
+															src="fintech/wp-content/uploads/sites/9/2021/06/Fintech-logo-1.png"
+															title="" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-85f8f61"
+											data-id="85f8f61" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-e0f3ab7 elementor-widget elementor-widget-image"
+													data-id="e0f3ab7" data-element_type="widget"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async"
+															src="fintech/wp-content/uploads/sites/9/2021/06/Fintech-logo-2.png"
+															title="" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-27f0ae8"
+											data-id="27f0ae8" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-e130544 elementor-widget elementor-widget-image"
+													data-id="e130544" data-element_type="widget"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async"
+															src="fintech/wp-content/uploads/sites/9/2021/06/Fintech-logo-3.png"
+															title="" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-1864e1c"
+											data-id="1864e1c" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-43e4bed elementor-widget elementor-widget-image"
+													data-id="43e4bed" data-element_type="widget"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async"
+															src="fintech/wp-content/uploads/sites/9/2021/06/Fintech-logo-6.png"
+															title="" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-c92207e"
+											data-id="c92207e" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-35634a1 elementor-widget elementor-widget-image"
+													data-id="35634a1" data-element_type="widget"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async"
+															src="fintech/wp-content/uploads/sites/9/2021/06/Fintech-logo-5.png"
+															title="" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-cb65841"
+											data-id="cb65841" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-f3ff89b elementor-widget elementor-widget-image"
+													data-id="f3ff89b" data-element_type="widget"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async"
+															src="fintech/wp-content/uploads/sites/9/2021/06/Fintech-logo-4.png"
+															title="" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<section
+									class="elementor-section elementor-top-section elementor-element elementor-element-43eb1ef elementor-reverse-tablet elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="43eb1ef" data-element_type="section">
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5efeff7"
+											data-id="5efeff7" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-f3ee7a1 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
+													data-id="f3ee7a1" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}"
+													data-widget_type="heading.default">
+													<div class="elementor-widget-container">
+														<h2 class="elementor-heading-title elementor-size-default">Get
+															the best services with the lowest fees</h2>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-5b2a83e animated-slow elementor-invisible elementor-widget elementor-widget-text-editor"
+													data-id="5b2a83e" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}"
+													data-widget_type="text-editor.default">
+													<div class="elementor-widget-container">
+														<p>At click state LLC. , we believe that the beauty of life lies
+															in the little things that give us a better expression of
+															ourselves, make us more social and connect emotionally.</p>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-2383271 elementor-position-left animated-slow bdt-icon-type-icon elementor-vertical-align-top bdt-icon-effect-none elementor-invisible elementor-widget elementor-widget-bdt-advanced-icon-box"
+													data-id="2383271" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}"
+													data-widget_type="bdt-advanced-icon-box.default">
+													<div class="elementor-widget-container">
+														<div class="bdt-advanced-icon-box">
+
+
+
+
+															<div class="bdt-advanced-icon-box-content">
+
+
+
+
+
+
+
+																<div class="bdt-advanced-icon-box-description">
+																	<h4 class="bdt-advanced-icon-box-title">Maximum
+																		cashback fee for virtual account transactions is
+																		$49 for 8 months.</h4>
+																</div>
+
+															</div>
+														</div>
+
+
+
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-d2934f5 elementor-position-left animated-slow bdt-icon-type-icon elementor-vertical-align-top bdt-icon-effect-none elementor-invisible elementor-widget elementor-widget-bdt-advanced-icon-box"
+													data-id="d2934f5" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}"
+													data-widget_type="bdt-advanced-icon-box.default">
+													<div class="elementor-widget-container">
+														<div class="bdt-advanced-icon-box">
+
+
+
+
+															<div class="bdt-advanced-icon-box-content">
+
+
+
+
+
+
+
+																<div class="bdt-advanced-icon-box-description">
+																	<p>The program period runs from 14 December 2022 to
+																		24 November 2023.</p>
+																</div>
+
+															</div>
+														</div>
+
+
+
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-be97dab elementor-position-left animated-slow bdt-icon-type-icon elementor-vertical-align-top bdt-icon-effect-none elementor-invisible elementor-widget elementor-widget-bdt-advanced-icon-box"
+													data-id="be97dab" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInDown&quot;}"
+													data-widget_type="bdt-advanced-icon-box.default">
+													<div class="elementor-widget-container">
+														<div class="bdt-advanced-icon-box">
+
+
+
+
+															<div class="bdt-advanced-icon-box-content">
+
+
+
+
+
+
+
+																<div class="bdt-advanced-icon-box-description">
+																	<p>Transaction fees will be calculated when the
+																		merchant can make a transaction. November 2023.
+																	</p>
+																</div>
+
+															</div>
+														</div>
+
+
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-be86574 animated-slow elementor-invisible"
+											data-id="be86574" data-element_type="column"
+											data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-0a4a1ec elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
+													data-id="0a4a1ec" data-element_type="widget"
+													data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async"
+															src="wp-content/uploads/2022/06/Startup-Smarter-Image-2.webp"
+															title="" alt="">
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-909c0eb elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
+													data-id="909c0eb" data-element_type="widget"
+													data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async"
+															src="wp-content/uploads/2022/06/Startup-Smarter-Ornament-2.webp"
+															title="" alt="">
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-21359e0 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image"
+													data-id="21359e0" data-element_type="widget"
+													data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async"
+															src="wp-content/uploads/2022/06/Startup-Smarter-Ornament-1.webp"
+															title="" alt="">
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-d5a2b60 elementor-widget__width-initial elementor-absolute ep-parallax-effects-yes elementor-widget elementor-widget-image"
+													data-id="d5a2b60" data-element_type="widget"
+													data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;ep_parallax_effects_show&quot;:&quot;yes&quot;,&quot;ep_parallax_effects_y&quot;:&quot;yes&quot;,&quot;ep_parallax_effects_y_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-50,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_y_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:100,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_target&quot;:&quot;section&quot;,&quot;ep_parallax_effects_rotate_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_rotate_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_scale_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_scale_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_hue_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_sepia_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_easing_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_viewport_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async"
+															src="wp-content/uploads/2022/06/Startup-Smarter-Image-1.webp"
+															title="" alt="">
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-19e0b50 elementor-widget__width-initial elementor-absolute ep-parallax-effects-yes elementor-widget elementor-widget-image"
+													data-id="19e0b50" data-element_type="widget"
+													data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;ep_parallax_effects_show&quot;:&quot;yes&quot;,&quot;ep_parallax_effects_y&quot;:&quot;yes&quot;,&quot;ep_parallax_effects_y_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-50,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_y_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:100,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_target&quot;:&quot;section&quot;,&quot;ep_parallax_effects_rotate_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_rotate_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_scale_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_scale_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_hue_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_sepia_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_easing_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_viewport_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async"
+															src="wp-content/uploads/2022/06/Startup-Hero-Ornament-2.webp"
+															title="" alt="">
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-45607a6 elementor-widget__width-initial ep-parallax-effects-yes elementor-widget elementor-widget-spacer"
+													data-id="45607a6" data-element_type="widget"
+													data-settings="{&quot;ep_parallax_effects_show&quot;:&quot;yes&quot;,&quot;ep_parallax_effects_y&quot;:&quot;yes&quot;,&quot;ep_parallax_effects_y_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:-80,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_y_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:80,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_rotate_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_rotate_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_scale_start&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_scale_end&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_hue_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_sepia_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_easing_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_viewport_value&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ep_parallax_effects_target&quot;:&quot;self&quot;}"
+													data-widget_type="spacer.default">
+													<div class="elementor-widget-container">
+														<style>
+															/*! elementor - v3.9.1 - 14-12-2022 */
+															.elementor-column .elementor-spacer-inner {
+																height: var(--spacer-size)
+															}
+
+															.e-con {
+																--container-widget-width: 100%
+															}
+
+															.e-con-inner>.elementor-widget-spacer,
+															.e-con>.elementor-widget-spacer {
+																width: var(--container-widget-width, var(--spacer-size));
+																--align-self: var(--container-widget-align-self, initial);
+																--flex-shrink: 0
+															}
+
+															.e-con-inner>.elementor-widget-spacer>.elementor-widget-container,
+															.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer,
+															.e-con>.elementor-widget-spacer>.elementor-widget-container,
+															.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer {
+																height: 100%
+															}
+
+															.e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner,
+															.e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner {
+																height: var(--container-widget-height, var(--spacer-size))
+															}
+														</style>
+														<div class="elementor-spacer">
+															<div class="elementor-spacer-inner"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+								<div class="elementor-section elementor-top-section elementor-element elementor-element-54187c62 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="54187c62" data-element_type="section">
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-56fb5cdd"
+											data-id="56fb5cdd" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-8341037 elementor-invisible elementor-widget elementor-widget-heading"
+													data-id="8341037" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+													data-widget_type="heading.default">
+													<div class="elementor-widget-container">
+														<h2 class="elementor-heading-title elementor-size-default">How
+															click state works</h2>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-509fae56 elementor-invisible elementor-widget elementor-widget-text-editor"
+													data-id="509fae56" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:100}"
+													data-widget_type="text-editor.default">
+													<div class="elementor-widget-container">
+														<p>click state has clearly distinguished itself in the banking
+															industry through superior service quality, unique customer
+															experience, and sound financial experience</p>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-24cfff0c elementor-invisible elementor-widget elementor-widget-bdt-tabs"
+													data-id="24cfff0c" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:200}"
+													data-widget_type="bdt-tabs.default">
+													<div class="elementor-widget-container">
+
+
+														<div class="bdt-tabs-area">
+
+															<div id="bdt-tabs-24cfff0c"
+																class="bdt-tabs  bdt-tabs-default"
+																data-settings="{&quot;id&quot;:&quot;bdt-tabs-24cfff0c&quot;,&quot;activeHash&quot;:&quot;no&quot;,&quot;hashTopOffset&quot;:70,&quot;hashScrollspyTime&quot;:1500,&quot;navStickyOffset&quot;:1,&quot;linkWidgetSettings&quot;:[&quot;#pin-customization&quot;,&quot;#flexible-interface&quot;,&quot;#payment-tracking&quot;],&quot;linkWidgetId&quot;:&quot;24cfff0c&quot;}">
+
+
+																<div>
+																	<div>
+																		<div class="bdt-tab bdt-tab-default bdt-flex-center"
+																			data-bdt-tab="connect: #bdt-tab-content-24cfff0c;"
+																			data-bdt-height-match="target: &gt; .bdt-tabs-item &gt; .bdt-tabs-item-title; row: false;">
+																			<div class="bdt-tabs-item">
+																				<a data-title="1-register-an-account"
+																					class="bdt-tabs-item-title"
+																					id="bdt-tab-1-register-an-account"
+																					data-tab-index="0" href="#">
+																					<div
+																						class="bdt-tab-text-wrapper bdt-flex-column">
+
+																						<div
+																							class="bdt-tab-title-icon-wrapper">
+
+
+																							<span class="bdt-tab-text">
+																								1. Register an Account
+																							</span>
+
+
+																						</div>
+
+
+																					</div>
+																				</a>
+																			</div>
+																			<div class="bdt-tabs-item">
+																				<a data-title="2-verify-identity"
+																					class="bdt-tabs-item-title"
+																					id="bdt-tab-2-verify-identity"
+																					data-tab-index="1" href="#">
+																					<div
+																						class="bdt-tab-text-wrapper bdt-flex-column">
+
+																						<div
+																							class="bdt-tab-title-icon-wrapper">
+
+
+																							<span class="bdt-tab-text">
+																								2. Verify Identity
+																							</span>
+
+
+																						</div>
+
+
+																					</div>
+																				</a>
+																			</div>
+																			<div class="bdt-tabs-item">
+																				<a data-title="3-start-transactions"
+																					class="bdt-tabs-item-title"
+																					id="bdt-tab-3-start-transactions"
+																					data-tab-index="2" href="#">
+																					<div
+																						class="bdt-tab-text-wrapper bdt-flex-column">
+
+																						<div
+																							class="bdt-tab-title-icon-wrapper">
+
+
+																							<span class="bdt-tab-text">
+																								3. Start Transactions
+																							</span>
+
+
+																						</div>
+
+
+																					</div>
+																				</a>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+
+
+																<div class="bdt-switcher-wrapper">
+																	<div id="bdt-tab-content-24cfff0c"
+																		class="bdt-switcher bdt-switcher-item-content">
+																		<div class=""
+																			data-content-id="1-register-an-account">
+																			<div>
+																			</div>
+																		</div>
+																		<div class=""
+																			data-content-id="2-verify-identity">
+																			<div>
+																			</div>
+																		</div>
+																		<div class=""
+																			data-content-id="3-start-transactions">
+																			<div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<a href="#" id="bottom-anchor-24cfff0c"
+																	data-bdt-hidden=""></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="elementor-section elementor-top-section elementor-element elementor-element-182ff2e6 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="182ff2e6" data-element_type="section">
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d03403a"
+											data-id="d03403a" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-section elementor-inner-section elementor-element elementor-element-39cfa746 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+													data-id="39cfa746" data-element_type="section"
+													id="pin-customization"
+													data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+													<div class="elementor-container elementor-column-gap-default">
+														<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-21ceb25a"
+															data-id="21ceb25a" data-element_type="column">
+															<div
+																class="elementor-widget-wrap elementor-element-populated">
+																<div class="elementor-element elementor-element-5354a275 elementor-widget elementor-widget-image"
+																	data-id="5354a275" data-element_type="widget"
+																	data-widget_type="image.default">
+																	<div class="elementor-widget-container">
+																		<img decoding="async" width="1065" height="598"
+																			src="wp-content/uploads/2022/12/undraw_Account_re_o7id.png"
+																			class="attachment-full size-full wp-image-110"
+																			alt="" loading="lazy"
+																			srcset="wp-content/uploads/2022/12/undraw_Account_re_o7id.png 1065w, wp-content/uploads/2022/12/undraw_Account_re_o7id-300x168.png 300w, wp-content/uploads/2022/12/undraw_Account_re_o7id-1024x575.png 1024w, wp-content/uploads/2022/12/undraw_Account_re_o7id-768x431.png 768w, wp-content/uploads/2022/12/undraw_Account_re_o7id-650x365.png 650w"
+																			sizes="(max-width: 1065px) 100vw, 1065px">
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-1f4c22ef"
+															data-id="1f4c22ef" data-element_type="column">
+															<div
+																class="elementor-widget-wrap elementor-element-populated">
+																<div class="elementor-element elementor-element-42a8daa6 elementor-widget elementor-widget-heading"
+																	data-id="42a8daa6" data-element_type="widget"
+																	data-widget_type="heading.default">
+																	<div class="elementor-widget-container">
+																		<h2
+																			class="elementor-heading-title elementor-size-default">
+																			1. Register an Account</h2>
+																	</div>
+																</div>
+																<div class="elementor-element elementor-element-51880ca4 elementor-widget elementor-widget-text-editor"
+																	data-id="51880ca4" data-element_type="widget"
+																	data-widget_type="text-editor.default">
+																	<div class="elementor-widget-container">
+																		<p>The click state Account is recommended if you
+																			have a specific goal in mind or you just
+																			want to start setting money aside. This
+																			account offers interest on your funds
+																			regardless of the goal.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="elementor-section elementor-inner-section elementor-element elementor-element-4811eb60 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+													data-id="4811eb60" data-element_type="section"
+													id="flexible-interface"
+													data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+													<div class="elementor-container elementor-column-gap-default">
+														<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7e1ad76d"
+															data-id="7e1ad76d" data-element_type="column">
+															<div
+																class="elementor-widget-wrap elementor-element-populated">
+																<div class="elementor-element elementor-element-31be91cd elementor-widget elementor-widget-image"
+																	data-id="31be91cd" data-element_type="widget"
+																	data-widget_type="image.default">
+																	<div class="elementor-widget-container">
+																		<img decoding="async" width="783" height="794"
+																			src="wp-content/uploads/2022/12/undraw_Authentication_re_svpt1.png"
+																			class="attachment-full size-full wp-image-111"
+																			alt="" loading="lazy"
+																			srcset="wp-content/uploads/2022/12/undraw_Authentication_re_svpt1.png 783w, wp-content/uploads/2022/12/undraw_Authentication_re_svpt1-296x300.png 296w, wp-content/uploads/2022/12/undraw_Authentication_re_svpt1-768x779.png 768w, wp-content/uploads/2022/12/undraw_Authentication_re_svpt1-641x650.png 641w"
+																			sizes="(max-width: 783px) 100vw, 783px">
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4eae5885"
+															data-id="4eae5885" data-element_type="column">
+															<div
+																class="elementor-widget-wrap elementor-element-populated">
+																<div class="elementor-element elementor-element-17957c47 elementor-widget elementor-widget-heading"
+																	data-id="17957c47" data-element_type="widget"
+																	data-widget_type="heading.default">
+																	<div class="elementor-widget-container">
+																		<h2
+																			class="elementor-heading-title elementor-size-default">
+																			2. Verify Identity</h2>
+																	</div>
+																</div>
+																<div class="elementor-element elementor-element-46bd91cd elementor-widget elementor-widget-text-editor"
+																	data-id="46bd91cd" data-element_type="widget"
+																	data-widget_type="text-editor.default">
+																	<div class="elementor-widget-container">
+																		<p>At click state Bank we know that issues like
+																			security, protection from fraud and personal
+																			privacy, we make to sure to take extra steps
+																			by verifying customer identity with our
+																			state of art software</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="elementor-section elementor-inner-section elementor-element elementor-element-6f100180 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+													data-id="6f100180" data-element_type="section" id="payment-tracking"
+													data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+													<div class="elementor-container elementor-column-gap-default">
+														<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-616dd2a3"
+															data-id="616dd2a3" data-element_type="column">
+															<div
+																class="elementor-widget-wrap elementor-element-populated">
+																<div class="elementor-element elementor-element-23836ef elementor-widget elementor-widget-image"
+																	data-id="23836ef" data-element_type="widget"
+																	data-widget_type="image.default">
+																	<div class="elementor-widget-container">
+																		<img decoding="async" width="786" height="684"
+																			src="wp-content/uploads/2022/12/undraw_Transfer_money_re_6o1h.png"
+																			class="attachment-full size-full wp-image-109"
+																			alt="" loading="lazy"
+																			srcset="wp-content/uploads/2022/12/undraw_Transfer_money_re_6o1h.png 786w, wp-content/uploads/2022/12/undraw_Transfer_money_re_6o1h-300x261.png 300w, wp-content/uploads/2022/12/undraw_Transfer_money_re_6o1h-768x668.png 768w, wp-content/uploads/2022/12/undraw_Transfer_money_re_6o1h-650x566.png 650w"
+																			sizes="(max-width: 786px) 100vw, 786px">
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4817b8a4"
+															data-id="4817b8a4" data-element_type="column">
+															<div
+																class="elementor-widget-wrap elementor-element-populated">
+																<div class="elementor-element elementor-element-2597313d elementor-widget elementor-widget-heading"
+																	data-id="2597313d" data-element_type="widget"
+																	data-widget_type="heading.default">
+																	<div class="elementor-widget-container">
+																		<h2
+																			class="elementor-heading-title elementor-size-default">
+																			3. Start Transactions</h2>
+																	</div>
+																</div>
+																<div class="elementor-element elementor-element-56866386 elementor-widget elementor-widget-text-editor"
+																	data-id="56866386" data-element_type="widget"
+																	data-widget_type="text-editor.default">
+																	<div class="elementor-widget-container">
+																		<p>click state is designed to facilitate financial
+																			inclusion, permitting individuals with
+																			minimal amount of income to enjoy all
+																			benefits we offer. Enjoy a value adding
+																			banking relationship with us.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<section
+									class="elementor-section elementor-top-section elementor-element elementor-element-ad922ce elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="ad922ce" data-element_type="section">
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9af9ba4"
+											data-id="9af9ba4" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-6461c4f elementor-invisible elementor-widget elementor-widget-image"
+													data-id="6461c4f" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async"
+															src="fintech/wp-content/uploads/sites/9/2021/08/fintech-feature-4.webp"
+															title="" alt="">
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-8b90df6 elementor-invisible elementor-widget elementor-widget-image"
+													data-id="8b90df6" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:200}"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async"
+															src="fintech/wp-content/uploads/sites/9/2021/08/fintech-feature-6.webp"
+															title="" alt="">
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-a8f7f9a elementor-invisible elementor-widget elementor-widget-image"
+													data-id="a8f7f9a" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:200}"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async"
+															src="fintech/wp-content/uploads/sites/9/2021/08/fintech-feature-5.webp"
+															title="" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-25be894"
+											data-id="25be894" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-9fadd02 elementor-widget elementor-widget-heading"
+													data-id="9fadd02" data-element_type="widget"
+													data-widget_type="heading.default">
+													<div class="elementor-widget-container">
+														<h5 class="elementor-heading-title elementor-size-default">
+															Reliable and Trustworthy</h5>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-b699fbb elementor-widget elementor-widget-heading"
+													data-id="b699fbb" data-element_type="widget"
+													data-widget_type="heading.default">
+													<div class="elementor-widget-container">
+														<h2 class="elementor-heading-title elementor-size-default">We
+															help your needs to
+															receive payments faster</h2>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-39177fd elementor-widget elementor-widget-text-editor"
+													data-id="39177fd" data-element_type="widget"
+													data-widget_type="text-editor.default">
+													<div class="elementor-widget-container">
+														<p>click state has clearly distinguished itself in the banking
+															industry through superior service quality, unique customer
+															experience, and sound financial indices.</p>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-dddfd2d elementor-align-left elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+													data-id="dddfd2d" data-element_type="widget"
+													data-widget_type="icon-list.default">
+													<div class="elementor-widget-container">
+														<link rel="stylesheet"
+															href="wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">
+														<ul class="elementor-icon-list-items elementor-inline-items">
+															<li class="elementor-icon-list-item elementor-inline-item">
+																<span class="elementor-icon-list-icon">
+																	<i aria-hidden="true" class="fas fa-circle"></i>
+																</span>
+																<span class="elementor-icon-list-text">BANK
+																	TRANSFER</span>
+															</li>
+															<li class="elementor-icon-list-item elementor-inline-item">
+																<span class="elementor-icon-list-icon">
+																	<i aria-hidden="true" class="fas fa-circle"></i>
+																</span>
+																<span class="elementor-icon-list-text">CREDIT
+																	CARD</span>
+															</li>
+															<li class="elementor-icon-list-item elementor-inline-item">
+																<span class="elementor-icon-list-icon">
+																	<i aria-hidden="true" class="fas fa-circle"></i>
+																</span>
+																<span class="elementor-icon-list-text">DEBIT CARD</span>
+															</li>
+															<li class="elementor-icon-list-item elementor-inline-item">
+																<span class="elementor-icon-list-icon">
+																	<i aria-hidden="true" class="fas fa-circle"></i>
+																</span>
+																<span class="elementor-icon-list-text">VISA</span>
+															</li>
+															<li class="elementor-icon-list-item elementor-inline-item">
+																<span class="elementor-icon-list-icon">
+																	<i aria-hidden="true" class="fas fa-circle"></i>
+																</span>
+																<span class="elementor-icon-list-text">E-MONEY</span>
+															</li>
+															<li class="elementor-icon-list-item elementor-inline-item">
+																<span class="elementor-icon-list-icon">
+																	<i aria-hidden="true" class="fas fa-circle"></i>
+																</span>
+																<span class="elementor-icon-list-text">MOBILE
+																	MONEY</span>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+								<section
+									class="elementor-section elementor-top-section elementor-element elementor-element-45c410c0 elementor-reverse-tablet elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="45c410c0" data-element_type="section"
+									data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-36f52528"
+											data-id="36f52528" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-5b1b01d8 elementor-invisible elementor-widget elementor-widget-image"
+													data-id="5b1b01d8" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async"
+															src="wp-content/uploads/2022/03/Payment-Solutions-Financial-Image-1.webp"
+															title="" alt="">
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-43e04ee1 elementor-invisible elementor-widget elementor-widget-image"
+													data-id="43e04ee1" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:100}"
+													data-widget_type="image.default">
+													<div class="elementor-widget-container">
+														<img decoding="async"
+															src="wp-content/uploads/2022/03/Payment-Solutions-Financial-Image-2.webp"
+															title="" alt="">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-26dda72d"
+											data-id="26dda72d" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-2a114afd elementor-invisible elementor-widget elementor-widget-heading"
+													data-id="2a114afd" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:300}"
+													data-widget_type="heading.default">
+													<div class="elementor-widget-container">
+														<h2 class="elementor-heading-title elementor-size-default">One
+															dashboard for all business financial needs</h2>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-54b33a31 elementor-invisible elementor-widget elementor-widget-text-editor"
+													data-id="54b33a31" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:400}"
+													data-widget_type="text-editor.default">
+													<div class="elementor-widget-container">
+														<p>click state is designed to facilitate financial inclusion,
+															permitting individuals with minimal amount of income to
+															enjoy all benefits we offer. Enjoy a value adding banking
+															relationship with us.</p>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-66b430cf elementor-position-left elementor-widget__width-initial elementor-widget-tablet__width-auto bdt-icon-type-icon elementor-vertical-align-top bdt-icon-effect-none elementor-invisible elementor-widget elementor-widget-bdt-advanced-icon-box"
+													data-id="66b430cf" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:500}"
+													data-widget_type="bdt-advanced-icon-box.default">
+													<div class="elementor-widget-container">
+														<div class="bdt-advanced-icon-box">
+
+
+
+
+															<div class="bdt-advanced-icon-box-content">
+
+
+																<h3 class="bdt-advanced-icon-box-title">
+																	<span>
+																		Easy to use </span>
+																</h3>
+
+
+																<div class="bdt-advanced-icon-box-sub-title">
+																	For everyone </div>
+
+
+
+
+															</div>
+														</div>
+
+
+
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-76e61bee elementor-position-left elementor-widget__width-initial elementor-widget-tablet__width-auto bdt-icon-type-icon elementor-vertical-align-top bdt-icon-effect-none elementor-invisible elementor-widget elementor-widget-bdt-advanced-icon-box"
+													data-id="76e61bee" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:500}"
+													data-widget_type="bdt-advanced-icon-box.default">
+													<div class="elementor-widget-container">
+														<div class="bdt-advanced-icon-box">
+
+
+
+
+															<div class="bdt-advanced-icon-box-content">
+
+
+																<h3 class="bdt-advanced-icon-box-title">
+																	<span>
+																		Super safe </span>
+																</h3>
+
+
+																<div class="bdt-advanced-icon-box-sub-title">
+																	Security system </div>
+
+
+
+
+															</div>
+														</div>
+
+
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+								<section
+									class="elementor-section elementor-top-section elementor-element elementor-element-57e968ec elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="57e968ec" data-element_type="section">
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1518c516"
+											data-id="1518c516" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-2b461826 elementor-invisible elementor-widget elementor-widget-heading"
+													data-id="2b461826" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+													data-widget_type="heading.default">
+													<div class="elementor-widget-container">
+														<h2 class="elementor-heading-title elementor-size-default">We
+															help your needs to receive payments faster</h2>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-5967af88 elementor-invisible elementor-widget elementor-widget-text-editor"
+													data-id="5967af88" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:100}"
+													data-widget_type="text-editor.default">
+													<div class="elementor-widget-container">
+														<p>click state has clearly distinguished itself in the banking
+															industry through superior service quality, unique customer
+															experience, and sound financial indices.</p>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-4dc1b9a4 elementor-invisible elementor-widget elementor-widget-bdt-accordion"
+													data-id="4dc1b9a4" data-element_type="widget"
+													data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:200}"
+													data-widget_type="bdt-accordion.default">
+													<div class="elementor-widget-container">
+														<div class="bdt-accordion-container">
+															<div id="bdt-accordion-4dc1b9a4" class="bdt-accordion"
+																data-bdt-accordion="{&quot;collapsible&quot;:true,&quot;multiple&quot;:false,&quot;transition&quot;:&quot;ease-in-out&quot;}"
+																data-settings="{&quot;id&quot;:&quot;bdt-accordion-4dc1b9a4&quot;,&quot;activeHash&quot;:&quot;no&quot;,&quot;activeScrollspy&quot;:null,&quot;hashTopOffset&quot;:false,&quot;hashScrollspyTime&quot;:false}">
+																<div class="bdt-accordion-item">
+																	<div class="bdt-accordion-title bdt-flex bdt-flex-middle bdt-flex-between"
+																		id="bdt-accordion-01-what-should-i-do-if-i-forgot-my-security-pin"
+																		data-accordion-index="0"
+																		data-title="01-what-should-i-do-if-i-forgot-my-security-pin"
+																		role="heading">
+
+																		<span
+																			class="bdt-accordion-icon bdt-flex-align-right"
+																			aria-hidden="true">
+
+																			<span class="bdt-accordion-icon-closed">
+																				<i aria-hidden="true"
+																					class="fa-fw ti ti-plus"></i>
+																			</span>
+
+																			<span class="bdt-accordion-icon-opened">
+																				<i aria-hidden="true"
+																					class="fa-fw ti ti-close"></i>
+																			</span>
+
+																		</span>
+
+																		<span
+																			class="bdt-title bdt-flex bdt-flex-middle">
+
+																			01. What should I do if I forgot my security
+																			pin? </span>
+
+																	</div>
+																	<div class="bdt-accordion-content">
+																		<p>Contact our support team and they will help
+																			with all issues you are facing</p>
+																	</div>
+																</div>
+																<div class="bdt-accordion-item">
+																	<div class="bdt-accordion-title bdt-flex bdt-flex-middle bdt-flex-between"
+																		id="bdt-accordion-02-how-to-register-on-this-platform"
+																		data-accordion-index="1"
+																		data-title="02-how-to-register-on-this-platform"
+																		role="heading">
+
+																		<span
+																			class="bdt-accordion-icon bdt-flex-align-right"
+																			aria-hidden="true">
+
+																			<span class="bdt-accordion-icon-closed">
+																				<i aria-hidden="true"
+																					class="fa-fw ti ti-plus"></i>
+																			</span>
+
+																			<span class="bdt-accordion-icon-opened">
+																				<i aria-hidden="true"
+																					class="fa-fw ti ti-close"></i>
+																			</span>
+
+																		</span>
+
+																		<span
+																			class="bdt-title bdt-flex bdt-flex-middle">
+
+																			02. How to register on this platform?
+																		</span>
+
+																	</div>
+																	<div class="bdt-accordion-content">
+																		<p>Click on the secured login button on the
+																			header and the get started button.</p>
+																	</div>
+																</div>
+																<div class="bdt-accordion-item">
+																	<div class="bdt-accordion-title bdt-flex bdt-flex-middle bdt-flex-between"
+																		id="bdt-accordion-03-what-should-i-do-if-my-account-is-banned"
+																		data-accordion-index="2"
+																		data-title="03-what-should-i-do-if-my-account-is-banned"
+																		role="heading">
+
+																		<span
+																			class="bdt-accordion-icon bdt-flex-align-right"
+																			aria-hidden="true">
+
+																			<span class="bdt-accordion-icon-closed">
+																				<i aria-hidden="true"
+																					class="fa-fw ti ti-plus"></i>
+																			</span>
+
+																			<span class="bdt-accordion-icon-opened">
+																				<i aria-hidden="true"
+																					class="fa-fw ti ti-close"></i>
+																			</span>
+
+																		</span>
+
+																		<span
+																			class="bdt-title bdt-flex bdt-flex-middle">
+
+																			03. What should i do if my account is
+																			banned? </span>
+
+																	</div>
+																	<div class="bdt-accordion-content">
+																		<p>Contact our support team and they will help
+																			with all issues you are facing.</p>
+																	</div>
+																</div>
+																<div class="bdt-accordion-item">
+																	<div class="bdt-accordion-title bdt-flex bdt-flex-middle bdt-flex-between"
+																		id="bdt-accordion-04-forgotten-atm-pin"
+																		data-accordion-index="3"
+																		data-title="04-forgotten-atm-pin"
+																		role="heading">
+
+																		<span
+																			class="bdt-accordion-icon bdt-flex-align-right"
+																			aria-hidden="true">
+
+																			<span class="bdt-accordion-icon-closed">
+																				<i aria-hidden="true"
+																					class="fa-fw ti ti-plus"></i>
+																			</span>
+
+																			<span class="bdt-accordion-icon-opened">
+																				<i aria-hidden="true"
+																					class="fa-fw ti ti-close"></i>
+																			</span>
+
+																		</span>
+
+																		<span
+																			class="bdt-title bdt-flex bdt-flex-middle">
+
+																			04. Forgotten ATM pin </span>
+
+																	</div>
+																	<div class="bdt-accordion-content">
+																		<p>Contact our support team and they will help
+																			with all issues you are facing.</p>
+																	</div>
+																</div>
+																<div class="bdt-accordion-item">
+																	<div class="bdt-accordion-title bdt-flex bdt-flex-middle bdt-flex-between"
+																		id="bdt-accordion-05-change-of-telephone-number"
+																		data-accordion-index="4"
+																		data-title="05-change-of-telephone-number"
+																		role="heading">
+
+																		<span
+																			class="bdt-accordion-icon bdt-flex-align-right"
+																			aria-hidden="true">
+
+																			<span class="bdt-accordion-icon-closed">
+																				<i aria-hidden="true"
+																					class="fa-fw ti ti-plus"></i>
+																			</span>
+
+																			<span class="bdt-accordion-icon-opened">
+																				<i aria-hidden="true"
+																					class="fa-fw ti ti-close"></i>
+																			</span>
+
+																		</span>
+
+																		<span
+																			class="bdt-title bdt-flex bdt-flex-middle">
+
+																			05. Change of Telephone Number </span>
+
+																	</div>
+																	<div class="bdt-accordion-content">
+																		<p>Contact our support team and they will help
+																			with all issues you are facing.</p>
+																	</div>
+																</div>
+																<div class="bdt-accordion-item">
+																	<div class="bdt-accordion-title bdt-flex bdt-flex-middle bdt-flex-between"
+																		id="bdt-accordion-06-over-limit-following-temporary-card-limit-increase"
+																		data-accordion-index="5"
+																		data-title="06-over-limit-following-temporary-card-limit-increase"
+																		role="heading">
+
+																		<span
+																			class="bdt-accordion-icon bdt-flex-align-right"
+																			aria-hidden="true">
+
+																			<span class="bdt-accordion-icon-closed">
+																				<i aria-hidden="true"
+																					class="fa-fw ti ti-plus"></i>
+																			</span>
+
+																			<span class="bdt-accordion-icon-opened">
+																				<i aria-hidden="true"
+																					class="fa-fw ti ti-close"></i>
+																			</span>
+
+																		</span>
+
+																		<span
+																			class="bdt-title bdt-flex bdt-flex-middle">
+
+																			06. Over Limit Following Temporary Card
+																			Limit Increase </span>
+
+																	</div>
+																	<div class="bdt-accordion-content">
+																		<p>Contact our support team and they will help
+																			with all issues you are facing.</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+								<section
+									class="elementor-section elementor-top-section elementor-element elementor-element-dae6ffc elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="dae6ffc" data-element_type="section"
+									data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<div class="elementor-background-overlay"></div>
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9ab4669 elementor-invisible"
+											data-id="9ab4669" data-element_type="column"
+											data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-26eb0ac elementor-widget elementor-widget-heading"
+													data-id="26eb0ac" data-element_type="widget"
+													data-widget_type="heading.default">
+													<div class="elementor-widget-container">
+														<h5 class="elementor-heading-title elementor-size-default">Get
+															Free Consultations</h5>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-07a3337 elementor-widget elementor-widget-heading"
+													data-id="07a3337" data-element_type="widget"
+													data-widget_type="heading.default">
+													<div class="elementor-widget-container">
+														<h2 class="elementor-heading-title elementor-size-default">Want
+															To Know More Information
+															About Banking Solutions?</h2>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-11e5885 elementor-align-center elementor-widget__width-auto elementor-widget elementor-widget-button"
+													data-id="11e5885" data-element_type="widget"
+													data-widget_type="button.default">
+													<div class="elementor-widget-container">
+														<div class="elementor-button-wrapper">
+															<a href="login.php"
+																class="elementor-button-link elementor-button elementor-size-sm"
+																role="button">
+																<span class="elementor-button-content-wrapper">
+																	<span
+																		class="elementor-button-icon elementor-align-icon-right">
+																		<i aria-hidden="true"
+																			class="fas fa-arrow-right"></i> </span>
+																	<span class="elementor-button-text">Get Started
+																		Now</span>
+																</span>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-69206d7 elementor-align-center elementor-widget__width-auto elementor-widget elementor-widget-button"
+													data-id="69206d7" data-element_type="widget"
+													data-widget_type="button.default">
+													<div class="elementor-widget-container">
+														<div class="elementor-button-wrapper">
+															<a href="https://clickstateonline.com/about-us"
+																class="elementor-button-link elementor-button elementor-size-sm"
+																role="button">
+																<span class="elementor-button-content-wrapper">
+																	<span
+																		class="elementor-button-icon elementor-align-icon-right">
+																		<i aria-hidden="true"
+																			class="fas fa-arrow-right"></i> </span>
+																	<span class="elementor-button-text">How It
+																		Works</span>
+																</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+								<!--<section
+									class="elementor-section elementor-top-section elementor-element elementor-element-9007c54 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+									data-id="9007c54" data-element_type="section"
+									data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<div class="elementor-container elementor-column-gap-default">
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5bbb1f2"
+											data-id="5bbb1f2" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-f9bc8ef elementor-widget elementor-widget-heading"
+													data-id="f9bc8ef" data-element_type="widget"
+													data-widget_type="heading.default">
+													<div class="elementor-widget-container">
+														<h2 class="elementor-heading-title elementor-size-default">
+															Subscribe to Newsletter</h2>
+													</div>
+												</div>
+												<div class="elementor-element elementor-element-b60bff2 elementor-widget elementor-widget-heading"
+													data-id="b60bff2" data-element_type="widget"
+													data-widget_type="heading.default">
+													<div class="elementor-widget-container">
+														<h5 class="elementor-heading-title elementor-size-default">
+															Empower SEO teams to find the best growth opportunities</h5>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-d86c1e2"
+											data-id="d86c1e2" data-element_type="column">
+											<div class="elementor-widget-wrap elementor-element-populated">
+												<div class="elementor-element elementor-element-875c939 elementor-widget elementor-widget-bdt-mailchimp"
+													data-id="875c939" data-element_type="widget"
+													data-widget_type="bdt-mailchimp.default">
+													<div class="elementor-widget-container">
+														<div class="bdt-newsletter-wrapper">
+
+
+															<form
+																action="https://clickstateonline.com/wp-admin/admin-ajax.php"
+																class="bdt-mailchimp bdt-grid bdt-grid-small bdt-flex-middle"
+																bdt-grid="">
+
+
+																<div
+																	class="bdt-newsletter-input-wrapper bdt-width-expand">
+																	<input type="email" name="email"
+																		placeholder="Email *" required=""
+																		class="bdt-input">
+																	<input type="hidden" name="action"
+																		value="element_pack_mailchimp_subscribe">
+																	<input type="hidden"
+																		name="bdt-sf-bdt-mailchimp-875c939"
+																		value="true">
+																 we need action parameter to receive ajax request in WordPress 
+																</div>
+																<div
+																	class="bdt-newsletter-signup-wrapper bdt-width-auto">
+																	<button type="submit"
+																		class="bdt-newsletter-btn bdt-button bdt-button-primary bdt-width-1-1">
+																		<div
+																			class="bdt-newsletter-btn-content-wrapper bdt-flex bdt-flex-middle bdt-flex-center  ">
+																			<div
+																				class="bdt-newsletter-btn-icon bdt-flex-align-right">
+
+																				<i aria-hidden="true"
+																					class="fa-fw fas fa-arrow-right"></i>
+																			</div>
+																			<div
+																				class="bdt-newsletter-btn-text bdt-display-inline-block">
+																				Subscribe Now</div>
+																		</div>
+																	</button>
+																</div>
+															</form>
+
+															<after text
+
+														</div> end newsletter-signup
+
+
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>-->
+							</div>
+						</div>
+					</article>
+
+				</div><!-- #primary -->
+
+
+			</div><!-- #content -->
+
+			
+
+
+
+			<footer class="uicore-footer-wrapper elementor">
+				<div class="uicore uicore-inner-footer elementor-section elementor-section-boxed ">
+					<div class="uicore elementor-container four ">
+
+						<div class="uicore-footer-column uicore-animate">
+							<!--<div class="uicore-footer-widget">
+								<figure class="wp-block-image size-large is-resized"><img decoding="async"
+										loading="lazy" src="images/clickstate_icon.png" alt=""
+										class="wp-image-108" width="236" height="90"
+										srcset="images/clickstate_icon.png 1024w, images/clickstate_icon.png 300w, images/clickstate_icon.png 768w, images/clickstate_icon.png 1536w, images/clickstate_icon.png 2048w, images/clickstate_icon.png 650w"
+										sizes="(max-width: 236px) 100vw, 236px"></figure>
+							</div>-->
+							<!--<div class="uicore-footer-widget">
+								<p>Flexible and secure checking accounts are the cornerstone of our community banking
+									philosophy. With numerous account options and plenty of local banking experts, you
+									can be sure your money will be well looked after. Get started today and never look
+									back.</p> -->
+							</div>
+						</div>
+						<!-- <div class="uicore-footer-column uicore-animate"></div> -->
+						<!-- <div class="uicore-footer-column uicore-animate"></div>
+						<div class="uicore-footer-column uicore-animate"></div> -->
+					</div>
+				</div>
+
+
+				<div class="uicore uicore-copyrights elementor-section elementor-section-boxed ">
+					<div class="uicore elementor-container">
+						<div class="uicore-copyrights-wrapper">
+							<div class="uicore-copy-content uicore-animate uicore-no-socials">
+								<p class="p1"><span class="s1">© 2023 Made with <span class="emoji"><img
+												data-mce-resize="false" data-mce-placeholder="1" data-wp-emoji="1"
+												class="emoji" alt="❤️"
+												src="images/core/emoji/14.0.0/svg/2764.svg"></span> click state
+										LLC</span><span class="emoji"></span><span class="s1">. All Rights
+										Reserved.</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</footer><!-- 1.5 uicore_content_end -->
+		</div><!-- #page -->
+
+		<div id="uicore-back-to-top" class="uicore-back-to-top uicore-i-arrow uicore_hide_mobile "></div>
+		<div class="uicore-navigation-wrapper uicore-navbar elementor-section elementor-section-boxed uicore-mobile-menu-wrapper
+                ">
+			<nav class="uicore elementor-container">
+				<div class="uicore-branding uicore-mobile">
+					<a href="index.html" rel="home">
+						<img class="uicore uicore-logo" src="logoblue.png" alt="Nation Truist">
+					</a>
+				</div>
+
+
+				<div class="uicore-branding uicore-desktop">
+				</div>
+
+
+				<button type="button" class="uicore-toggle uicore-ham">
+					<span class="bars">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</span>
+				</button>
+			</nav>
+			<div class="uicore-navigation-content">
+				<div class="uicore-menu-container uicore-nav">
+					<ul class="uicore-menu">
+						<li
+							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-166">
+							<a href="index.html" aria-current="page"><span class="ui-menu-item-wrapper">Home</span></a>
+						</li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-170"><a
+								href="services.html"><span class="ui-menu-item-wrapper">Services</span></a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-167"><a
+								href="about-us.html"><span class="ui-menu-item-wrapper">About Us</span></a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-169"><a
+								href="faqs.html"><span class="ui-menu-item-wrapper">FAQs</span></a></li>
+						<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-168"><a
+								href="contact-us.html"><span class="ui-menu-item-wrapper">Contact Us</span></a></li>
+					</ul>
+				</div>
+				<div class="uicore uicore-extra">
+					<div class="uicore-custom-area uicore-only-mobile">
+					</div>
+					<div class="uicore-cta-wrapper">
+						<a href="login.php" target="_self" class="uicore-btn uicore-inverted">
+							Secure Login </a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 1.6 uicore_body_end -->
+	</div>
+	<!-- 1.7 uicore_after_body_content -->
+	<script>
+		var uicore_frontend = { 'back': 'Back' };
+		console.log('Using Level v.1.0.0');
+		console.log('Powered By UiCore Framework v.3.2.1');
+	</script>
+	<link rel='stylesheet' id='ep-advanced-icon-box-css'
+		href='wp-content/plugins/bdthemes-element-pack/assets/css/ep-advanced-icon-box.css?ver=5.15.2' media='all'>
+	<link rel='stylesheet' id='ep-tabs-css'
+		href='wp-content/plugins/bdthemes-element-pack/assets/css/ep-tabs.css?ver=5.15.2' media='all'>
+	<link rel='stylesheet' id='ep-accordion-css'
+		href='wp-content/plugins/bdthemes-element-pack/assets/css/ep-accordion.css?ver=5.15.2' media='all'>
+	<link rel='stylesheet' id='ep-mailchimp-css'
+		href='wp-content/plugins/bdthemes-element-pack/assets/css/ep-mailchimp.css?ver=5.15.2' media='all'>
+	<script src='wp-content/uploads/uicore-global.js?ver=2116' id='uicore_global-js'></script>
+	<script id='bdt-uikit-js-extra'>
+		var element_pack_ajax_login_config = { "ajaxurl": "https:\/\/nationtruist.com\/wp-admin\/admin-ajax.php", "language": "en", "loadingmessage": "Sending user info, please wait...", "unknownerror": "Unknown error, make sure access is correct!" };
+		var ElementPackConfig = { "ajaxurl": "https:\/\/nationtruist.com\/wp-admin\/admin-ajax.php", "nonce": "43da04403a", "data_table": { "language": { "lengthMenu": "Show _MENU_ Entries", "info": "Showing _START_ to _END_ of _TOTAL_ entries", "search": "Search :", "paginate": { "previous": "Previous", "next": "Next" } } }, "contact_form": { "sending_msg": "Sending message please wait...", "captcha_nd": "Invisible captcha not defined!", "captcha_nr": "Could not get invisible captcha response!" }, "mailchimp": { "subscribing": "Subscribing you please wait..." }, "elements_data": { "sections": [], "columns": [], "widgets": [] } };
+	</script>
+	<script src='wp-content/plugins/bdthemes-element-pack/assets/js/bdt-uikit.min.js?ver=3.7.2'
+		id='bdt-uikit-js'></script>
+	<script src='wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.9.1'
+		id='elementor-webpack-runtime-js'></script>
+	<script src='wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.9.1'
+		id='elementor-frontend-modules-js'></script>
+	<script src='wp-includes/js/jquery/ui/core.min.js?ver=1.13.2' id='jquery-ui-core-js'></script>
+	<script id='elementor-frontend-js-before'>
+		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Mobile", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Mobile Extra", "value": 880, "default_value": 880, "direction": "max", "is_enabled": false }, "tablet": { "label": "Tablet", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Extra", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": false }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": false }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": false } } }, "version": "3.9.1", "is_static": false, "experimentalFeatures": { "e_dom_optimization": true, "e_optimized_assets_loading": true, "e_optimized_css_loading": true, "a11y_improvements": true, "additional_custom_breakpoints": true, "e_import_export": true, "e_hidden_wordpress_widgets": true, "landing-pages": true, "elements-color-picker": true, "favorite-widgets": true, "admin-top-bar": true, "kit-elements-defaults": true }, "urls": { "assets": "https:\/\/nationtruist.com\/wp-content\/plugins\/elementor\/assets\/" }, "settings": { "page": [], "editorPreferences": [] }, "kit": { "active_breakpoints": ["viewport_mobile", "viewport_tablet"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 7, "title": "Nation%20Truist%20%E2%80%93%20Reliable%20and%20Trustworthy", "excerpt": "", "featuredImage": false } };
+	</script>
+	<script src='wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.9.1' id='elementor-frontend-js'></script>
+	<script src='wp-content/plugins/bdthemes-element-pack/assets/js/element-pack-site.min.js?ver=5.15.2'
+		id='element-pack-site-js'></script>
+</body>
+
+</html>
